@@ -82,12 +82,9 @@ function GetUser(){
   "url": "http://13.115.97.13/api/userauth",
   "method": "POST",
   "headers": {
-    "Content-Type": "application/json",   
-    "Host": "13.115.97.13",
+    "Content-Type": "application/json",
     "Accept-Encoding": "gzip, deflate",
-    "Content-Length": "140",
-    "Connection": "keep-alive",
-    "cache-control": "no-cache"
+    "Connection": "keep-alive"
   },
   "processData": false,
   "data": '{"Username": "' + document.getElementById('username').value + '","PasswordString": "' + document.getElementById('password').value + '"}'
@@ -96,7 +93,7 @@ function GetUser(){
 $.ajax(settings).done(function (response) {
 
 console.log(response);
-if(response.uid != null){
+if(response.status == "Success"){
     window.location='wallet';
 }
 else{
