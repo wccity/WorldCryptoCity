@@ -83,7 +83,7 @@ function GetUser(){
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",   
-    "Host": "localhost:44329",
+    "Host": "13.115.97.13",
     "Accept-Encoding": "gzip, deflate",
     "Content-Length": "140",
     "Connection": "keep-alive",
