@@ -12,7 +12,7 @@
                         <h1>Sign In</h1>
                     </div>
 
-                    <form class="form-horizontal" method="POST" action="">
+                    <form class="form-horizontal" method="POST" action="/" onsubmit="return false;">
 
                         <div class="form-group">
                             <label for="email">Email</label>
@@ -27,14 +27,14 @@
                             <div class="input-icon">
                                 <i class="mdi mdi-lock"></i>
                                 <span class="passtoggle mdi mdi-eye toggle-password"></span>
-                                <input type="password" class="form-control"  name="password" placeholder="Enter Your Password" >
+                                <input type="password" class="form-control" id="password"  name="password" placeholder="Enter Your Password" >
                             </div>
                         </div>
                         <div class="d-flex form-check">
                         	<a href="#">Forgot my password</a>
 
                         </div>
-                        <button class="btn btn-primary btn-block btn-c mt-4 mb-4">Submit</button>
+                        <button onclick="GetUser();" class="btn btn-primary btn-block btn-c mt-4 mb-4">Submit</button>
                     </form>
                     <div class="btn-social mb-4">
                     </div>
@@ -53,7 +53,61 @@
     </div>
 </div>
 
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login Account</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Login Error!
+        Please check your login credentials and try again.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>    
+function GetUser(){
+
+    var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://13.115.97.13/api/userauth",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",   
+    "Host": "localhost:44329",
+    "Accept-Encoding": "gzip, deflate",
+    "Content-Length": "140",
+    "Connection": "keep-alive",
+    "cache-control": "no-cache"
+  },
+  "processData": false,
+  "data": '{"Username": "' + document.getElementById('username').value + '","PasswordString": "' + document.getElementById('password').value + '"}'
+}
+
+$.ajax(settings).done(function (response) {
+
+console.log(response);
+if(response.uid != null){
+    window.location='wallet';
+}
+else{
+    $('#Modal').modal('show');
+}
+
+  
+});
 
 
+}
+</script>
 
 @endsection
