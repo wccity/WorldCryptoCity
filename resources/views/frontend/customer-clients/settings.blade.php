@@ -58,7 +58,7 @@
 											User name
 										</label>
 										<div class="input-wrap">
-											<input type="text" value="Alex Balden">
+											<input type="text" value="">
 										</div>
 									</div>
 
@@ -67,7 +67,7 @@
 											Email
 										</label>
 										<div class="input-wrap">
-											<input type="text" value="infor@grypterium.io">
+											<input type="text">
 										</div>
 									</div>
 
@@ -161,7 +161,7 @@
 									<div class="form__col-lg">
 										<label class="form__label">Adress</label>
 										<div class="input-wrap">
-											<input type="text" value="av. Miry 23">
+											<input type="text" value="">
 										</div>
 									</div>
 
@@ -266,7 +266,7 @@
 									<div class="security__col">
 
 										<div class="security__block">
-											<h3><br></h3>
+											<h3><br><br></h3>
 											<p>Two-factor authorization allows you to significantly enhance the protection of your account.</p>
 
 											<div class="switch-block">

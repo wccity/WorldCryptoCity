@@ -21,6 +21,7 @@
 <script src="{{ asset('assets/particles.js') }}"></script>
 <script src="{{ asset('assets/custom.js') }}"></script>
 
+@stack('scripts')
 
 </body>
 </html>

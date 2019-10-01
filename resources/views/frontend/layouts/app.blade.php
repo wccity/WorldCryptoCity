@@ -49,9 +49,9 @@
                 <div class="row row--xs-middle">
                     <div class="col col--sm-10 col--md-12 col--lg-4">
                         <div class="__item" style="margin-top: -70px;">
-                            <img class="img-responsive lazy" width="400" height="40" src="{{ asset('img/footerlogo.png') }}" data-src="{{ asset('img/footerlogo.png') }}" alt="demo">
+                            <a href="/"><img class="img-responsive lazy" width="400" height="40" src="{{ asset('img/footerlogo.png') }}" data-src="{{ asset('img/footerlogo.png') }}" alt="demo"></a>
                             <br>
-                              <p class="__title" style="text-decoration: none;">World Crypto City is based on Samao. It is one of the newest and most trusted crypto wallet.</p>
+                              <p class="__title" style="text-decoration: none;">World Crypto City is based on Samoa. It is one of the newest and most trusted crypto wallet.</p>
                         </div>
                     </div>
 
