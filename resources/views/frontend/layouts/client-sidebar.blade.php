@@ -56,7 +56,25 @@
 						</a>
 					</li>
 		
-				
+			
+
+						<li class="menu__item  {{ Request::is('cash-in') ? 'active' : '' }}" style="border-bottom: 1px solid #46505a;
+    border-top: 1px solid #46505a; width: 100%;">
+						<a class="menu__link" href="/cash-in">
+							<span class="menu__link-icon">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									width="13.5px" height="18px" viewBox="0 0 13.5 18" style="enable-background:new 0 0 13.5 18;" xml:space="preserve">
+							   <path d="M10.5,4.5V3.75C10.5,1.679,8.821,0,6.75,0S3,1.679,3,3.75V4.5H0v11.25C0,16.993,1.007,18,2.25,18h9
+								   c1.243,0,2.25-1.007,2.25-2.25V4.5H10.5z M4.5,3.75c0-1.243,1.007-2.25,2.25-2.25S9,2.507,9,3.75V4.5H4.5V3.75z M12,15.75
+								   c0,0.414-0.336,0.75-0.75,0.75h-9c-0.414,0-0.75-0.336-0.75-0.75V6H12V15.75z"/>
+							   </svg>
+							</span>
+							<span class="menu__link-text" style="color: #fff;">
+								Deposite
+							</span>
+						</a>
+					</li>
+						
 					<li class="menu__item {{ Request::is('settings') ? 'active' : '' }}" style="border-bottom: 1px solid #46505a;
     border-top: 1px solid #46505a; width: 100%;">
 						<a class="menu__link" href="/settings">
@@ -83,23 +101,6 @@
 							</span>
 							<span class="menu__link-text" style="color: #fff;">
 								Settings
-							</span>
-						</a>
-					</li>
-
-						<li class="menu__item  {{ Request::is('cash-in') ? 'active' : '' }}" style="border-bottom: 1px solid #46505a;
-    border-top: 1px solid #46505a; width: 100%;">
-						<a class="menu__link" href="/cash-in">
-							<span class="menu__link-icon">
-								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-									width="13.5px" height="18px" viewBox="0 0 13.5 18" style="enable-background:new 0 0 13.5 18;" xml:space="preserve">
-							   <path d="M10.5,4.5V3.75C10.5,1.679,8.821,0,6.75,0S3,1.679,3,3.75V4.5H0v11.25C0,16.993,1.007,18,2.25,18h9
-								   c1.243,0,2.25-1.007,2.25-2.25V4.5H10.5z M4.5,3.75c0-1.243,1.007-2.25,2.25-2.25S9,2.507,9,3.75V4.5H4.5V3.75z M12,15.75
-								   c0,0.414-0.336,0.75-0.75,0.75h-9c-0.414,0-0.75-0.336-0.75-0.75V6H12V15.75z"/>
-							   </svg>
-							</span>
-							<span class="menu__link-text" style="color: #fff;">
-								Cash In
 							</span>
 						</a>
 					</li>

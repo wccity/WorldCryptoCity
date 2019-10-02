@@ -17,7 +17,7 @@
                         <div class="form-group">
                             <label for="name">Username</label>
                             <div class="input-icon">
-                                <i class="mdi mdi-user"></i>
+                             <i> <img src="{{ asset('img/users.png') }}"></i>
                                 <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username" autofocus >
                                 
                             </div>
@@ -51,7 +51,7 @@
                                 </div>
                             </div>
 
-                        <div class="d-flex form-check">
+                        <div class="d-flex form-check" style="margin-left: -19px;">
                         	<input type="checkbox" class="d-flex form-check"><p style="margin-top: -6px !important;"> &nbsp; I aggree with  <a href="#">Term of Service</a>
                             </p>
                         </div>

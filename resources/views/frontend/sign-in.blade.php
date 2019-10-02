@@ -14,10 +14,10 @@
 
                         <form class="form-horizontal">
                             <div class="form-group">
-                                <label for="email">Username</label>
+                                <label for="email">Email</label>
                                 <div class="input-icon">
                                     <i class="mdi mdi-email"></i>
-                                    <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username" autofocus >
+                                    <input type="text" class="form-control" id="email" name="email" placeholder="Enter Email" autofocus >
                                     
                                 </div>
                             </div>
@@ -30,8 +30,8 @@
                                     <input type="password" class="form-control" id="password-field"  name="password" placeholder="Enter Your Password" >
                                 </div>
                             </div>
-                            <div class="d-flex form-check">
-                            	<a href="#">Forgot my password</a>
+                            <div class="d-flex form-check" style="margin-left: -15px !important">
+                            	<a href="/password-recovery">Forgot my password</a>
 
                             </div>
                             <button class="btn btn-primary btn-block btn-c mt-4 mb-4">Submit</button>

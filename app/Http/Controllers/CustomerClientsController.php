@@ -45,4 +45,9 @@ class CustomerClientsController extends Controller
     {
     	return view('frontend.customer-clients.settings');
     }
+
+    public function walletBitcoinCash()
+    {
+        return view('frontend.customer-clients.wallet-bitcoin-cash');
+    }
 }

@@ -5,7 +5,8 @@
 			<main class="main-content">
 				<section class="wallets">
 					<h2>My Wallet</h2>
-
+					<br>
+					<br>
 					<div class="wallets__list">
 
 						<a href="/wallet-bitcoin" class="wallet" style="background-color: #FF0800;">
@@ -44,7 +45,7 @@
 							</span>
 
 							<span class="wallet__bg-img">
-								<img src="img/wallet-bg-img-1.png" alt="">
+
 							</span>
 						</a>
 						<a href="/wallet-tether" class="wallet" style="background-color: #03A57F;">
@@ -80,13 +81,11 @@
 							</span>
 
 							<span class="wallet__bg-img">
-								<img src="img/tether.png" alt="" width="25">
 							</span>
 						</a>
 						
 						<a href="#add-wallet" class="add-wallet popup-link">
 							<span class="add-wallet__icon">
-								<img src="img/add-wallet-icon.png" alt="">
 							</span>
 							<span class="add-wallet__text">
 								Add New Wallet
@@ -124,14 +123,13 @@
 
 							<span class="wallet__footer">
 								<span>0 ETH -0 USD</span>
-								<span>- 31$</span>
+								<span>- 0$</span>
 							</span>
 
 							<span class="wallet__bg-img">
-								<img src="img/wallet-bg-img-2.png" alt="">
 							</span>
 						</a>
-						<a href="wallet-bitcoin-cash.html" class="wallet" style="background-color: #FBED28;">
+						<a href="/wallet-bitcoin-cash" class="wallet" style="background-color: #FBED28;">
 
 							<span class="wallet__header">
 								<span class="wallet__currency">
@@ -164,7 +162,6 @@
 							</span>
 
 							<span class="wallet__bg-img">
-								<img src="img/wallet-bg-img-2.png" alt="">
 							</span>
 						</a>
 						<a href="#add-wallet" class="add-wallet popup-link">
@@ -177,13 +174,62 @@
 						</a>
 					</div>
 				</section>
+			
 				<div align="center">
 					<div class="panel panel-default" style="width: 1055px;" align="left">
 					   <div class = "panel-heading">
 							<strong >Transaction History</strong>		
 					   </div>
 					   
-					   <div class = "panel-body">
+					   <div class="panel-body">
+					<div class="transactions__filters">
+
+						<div class="transactions__filters-col" style="margin-left: -30px;">
+							
+							<div class="custom-select--grey custom-select--actions">
+								<select class="custom-select">
+									<option value="All transactions">All transactions</option>
+									<option value="Sent">Sent</option>
+									<option value="Pending">Pending</option>
+									<option value="Recieved">Recieved</option>
+									<option value="Decline">Decline</option>
+								</select>
+							</div>
+							
+						</div>
+
+						<div class="transactions__filters-col transactions__filters-col--align-right">
+							<div class="datapickers">
+								<div class="datapicker-range">
+									<img src="img/calendar.svg" alt="">
+									<input type="text" placeholder="2017-04-01" class="datepicker-input datepicker-here" data-date-format="yyyy-mm-dd">
+								</div>
+								<div class="separator"></div>
+								<div class="datapicker-range">
+									<img src="img/calendar.svg" alt="">
+									<input type="text" placeholder="2017-04-01" class="datepicker-input datepicker-here" data-date-format="yyyy-mm-dd">
+								</div>
+							</div>
+							
+							</div>
+
+
+							<div class="custom-select--grey custom-select--currency">
+								<select class="custom-select">
+									<option value="Currency">Currency</option>
+									<option value="Ethereum">Ethereum</option>
+									<option value="Litecoin">Bitcoincash</option>
+								</select>
+							</div>
+
+						
+							<div class="input-wrap search-input">
+								<img src="img/search.svg" alt="">
+								<input type="text" placeholder="Search">
+							</div>
+						</div>
+			
+
 					   </div>
 					</div>
 				</div>

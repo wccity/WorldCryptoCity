@@ -35,4 +35,9 @@ class PagesController extends Controller
     {
         return view('frontend.email-confirmation');
     }
+
+    public function passwordRecovery()
+    {
+        return view('frontend.password-recovery');
+    }
 }
