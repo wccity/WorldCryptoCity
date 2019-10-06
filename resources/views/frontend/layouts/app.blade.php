@@ -24,7 +24,7 @@
                 s.parentNode.insertBefore(wf, s);
             })();
         </script>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
         <!-- Load other scripts
         ================================================== -->
         <script type="text/javascript">

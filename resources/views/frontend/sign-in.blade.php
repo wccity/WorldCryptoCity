@@ -12,12 +12,13 @@
                         <h1>Sign In</h1>
                     </div>
 
-                        <form class="form-horizontal">
+                        <form id="form-signin" action="wallet" method="post" class="form-horizontal">
+                            @csrf
                             <div class="form-group">
                                 <label for="email">Username</label>
                                 <div class="input-icon">
                                     <i class="mdi mdi-email"></i>
-                                    <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username" autofocus >
+                                    <input type="text" class="form-control" name="UserName" placeholder="Enter Username" autofocus required>
                                     
                                 </div>
                             </div>
@@ -27,14 +28,14 @@
                                     <i class="mdi mdi-lock"></i>
                                      <span toggle="#password-field" class="passtoggle mdi mdi-eye toggle-password"></span>
                                  {{--    <span ></span> --}}
-                                    <input type="password" class="form-control" id="password-field"  name="password" placeholder="Enter Your Password" >
+                                    <input type="password" class="form-control" name="PasswordString" placeholder="Enter Your Password" required>
                                 </div>
                             </div>
                             <div class="d-flex form-check">
                             	<a href="#">Forgot my password</a>
 
                             </div>
-                            <button class="btn btn-primary btn-block btn-c mt-4 mb-4">Submit</button>
+                            <button type="submit" class="btn btn-primary btn-block btn-c mt-4 mb-4">Submit</button>
                         </form>
                         <div class="btn-social mb-4">
                         </div>
@@ -53,9 +54,48 @@
         </div>
     </div>
 
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login Account</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Login Error!
+        Please check your login credentials and try again.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 @push('scripts')
-<script type="text/javascript">
+
+@if (session('failAttempt'))
+<script>
+    $('.modal-body').html('{{session('failAttempt')}}');
+    $('#Modal').modal('show');
+</script>
+
+@endif
+
+<?php
+
+if (isset($_GET['failAttempt']))
+{
+	echo ("");
+}
+
+
+?>
+
+<script>
     $(".toggle-password").click(function() {
         $(this).toggleClass("fa-eye fa-eye-slash");
         var input = $($(this).attr("toggle"));
@@ -65,6 +105,8 @@
         input.attr("type", "password");
         }
     });
+
+   
 </script>
 @endpush
  

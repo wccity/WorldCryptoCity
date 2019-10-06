@@ -27,19 +27,19 @@
 									   </svg>
 									</span>
 									<span class="wallet__currency-info">
-										<span>Bitcoin</span>
-										<span>BTC</span>
+										<span>{{$user_data->userWallet[0]->walletType->name}}</span>
+										<span>{{$user_data->userWallet[0]->walletType->code}}</span>
 									</span>
 								</span>
 
 								<span class="wallet__course">
-									<span>0 BTC</span>
-									<span>0 USD</span>
+									<span>{{$user_data->userWallet[0]->balance}} {{$user_data->userWallet[0]->walletType->code}}</span>
+									<span>{{$user_data->userWallet[0]->balanceFiat}} USD</span>
 								</span>
 							</span>
 
 							<span class="wallet__footer">
-								<span>0 BTC - 0 USD </span>
+								<span>{{$user_data->userWallet[0]->balance}} BTC - {{$user_data->userWallet[0]->balance}} USD </span>
 								<span>+ 0$</span>
 							</span>
 
@@ -55,7 +55,7 @@
 									<!-- 	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 											width="42px" height="42px" viewBox="0 0 42 42" style="enable-background:new 0 0 42 42;" xml:space="preserve"> -->
 											<img src="img/tether.png" width="40">
-									   		<path d="M32,0H10C4.5,0,0,4.5,0,10v22c0,5.5,4.5,10,10,10h22c5.5,0,10-4.5,10-10V10C42,4.5,37.5,0,32,0z M14.831,21.05
+											<path d="M32,0H10C4.5,0,0,4.5,0,10v22c0,5.5,4.5,10,10,10h22c5.5,0,10-4.5,10-10V10C42,4.5,37.5,0,32,0z M14.831,21.05
 										   c1.99-3.383,4.08-6.667,6.07-10.05c2.09,3.383,4.08,6.667,6.07,10.05c-0.099,0.099-0.199,0.099-0.298,0.199
 										   c-1.891,1.094-3.781,2.189-5.572,3.284c-0.199,0.099-0.398,0.099-0.597,0c-1.791-1.095-3.932-2.304-5.723-3.398L14.831,21.05z
 											M20.901,31c-1.99-3.085-4.08-5.97-6.169-8.856c0.199,0.099,0.298,0.199,0.497,0.298c1.791,1.095,3.483,2.09,5.274,3.184
@@ -63,19 +63,19 @@
 									   </svg>
 									</span>
 									<span class="wallet__currency-info">
-										<span>Theter</span>
-										<span>USDT</span>
+										<span>{{$user_data->userWallet[2]->walletType->name}}</span>
+										<span>{{$user_data->userWallet[2]->walletType->code}}</span>
 									</span>
 								</span>
 
 								<span class="wallet__course">
-									<span>0 USDT</span>
-									<span>0 USD</span>
+									<span>{{$user_data->userWallet[2]->balance}} {{$user_data->userWallet[2]->walletType->code}}</span>
+									<span>{{$user_data->userWallet[2]->balanceFiat}} USD</span>
 								</span>
 							</span>
 
 							<span class="wallet__footer">
-								<span>1 USDT - 0 USD</span>
+								<span>{{$user_data->userWallet[2]->balance}} {{$user_data->userWallet[2]->walletType->code}} - {{$user_data->userWallet[2]->balance}} USD</span>
 								<span>0$</span>
 							</span>
 
@@ -103,7 +103,7 @@
 									<span class="wallet__currency-icon">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 											width="42px" height="42px" viewBox="0 0 42 42" style="enable-background:new 0 0 42 42;" xml:space="preserve">
-									   		<path d="M32,0H10C4.5,0,0,4.5,0,10v22c0,5.5,4.5,10,10,10h22c5.5,0,10-4.5,10-10V10C42,4.5,37.5,0,32,0z M14.831,21.05
+											<path d="M32,0H10C4.5,0,0,4.5,0,10v22c0,5.5,4.5,10,10,10h22c5.5,0,10-4.5,10-10V10C42,4.5,37.5,0,32,0z M14.831,21.05
 										   c1.99-3.383,4.08-6.667,6.07-10.05c2.09,3.383,4.08,6.667,6.07,10.05c-0.099,0.099-0.199,0.099-0.298,0.199
 										   c-1.891,1.094-3.781,2.189-5.572,3.284c-0.199,0.099-0.398,0.099-0.597,0c-1.791-1.095-3.932-2.304-5.723-3.398L14.831,21.05z
 											M20.901,31c-1.99-3.085-4.08-5.97-6.169-8.856c0.199,0.099,0.298,0.199,0.497,0.298c1.791,1.095,3.483,2.09,5.274,3.184
@@ -111,19 +111,19 @@
 									   </svg>
 									</span>
 									<span class="wallet__currency-info">
-										<span>Ethereum</span>
-										<span>ETH</span>
+										<span>{{$user_data->userWallet[1]->walletType->name}}</span>
+										<span>{{$user_data->userWallet[1]->walletType->code}}</span>
 									</span>
 								</span>
 
 								<span class="wallet__course">
-									<span>0 ETH</span>
-									<span>0 USD</span>
+									<span>{{$user_data->userWallet[1]->balance}} {{$user_data->userWallet[1]->walletType->code}}</span>
+									<span>{{$user_data->userWallet[1]->balanceFiat}} USD</span>
 								</span>
 							</span>
 
 							<span class="wallet__footer">
-								<span>0 ETH -0 USD</span>
+								<span>{{$user_data->userWallet[1]->balance}} {{$user_data->userWallet[1]->walletType->code}} - {{$user_data->userWallet[1]->balance}} USD</span>
 								<span>- 31$</span>
 							</span>
 
@@ -139,7 +139,7 @@
 										<!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 											width="42px" height="42px" viewBox="0 0 42 42" style="enable-background:new 0 0 42 42;" xml:space="preserve"> -->
 											<img src="img/bitcoin.png" width="50px">
-									   		<path d="M32,0H10C4.5,0,0,4.5,0,10v22c0,5.5,4.5,10,10,10h22c5.5,0,10-4.5,10-10V10C42,4.5,37.5,0,32,0z M14.831,21.05
+											<path d="M32,0H10C4.5,0,0,4.5,0,10v22c0,5.5,4.5,10,10,10h22c5.5,0,10-4.5,10-10V10C42,4.5,37.5,0,32,0z M14.831,21.05
 										   c1.99-3.383,4.08-6.667,6.07-10.05c2.09,3.383,4.08,6.667,6.07,10.05c-0.099,0.099-0.199,0.099-0.298,0.199
 										   c-1.891,1.094-3.781,2.189-5.572,3.284c-0.199,0.099-0.398,0.099-0.597,0c-1.791-1.095-3.932-2.304-5.723-3.398L14.831,21.05z
 											M20.901,31c-1.99-3.085-4.08-5.97-6.169-8.856c0.199,0.099,0.298,0.199,0.497,0.298c1.791,1.095,3.483,2.09,5.274,3.184
@@ -147,20 +147,20 @@
 									   </svg>
 									</span>
 									<span class="wallet__currency-info">
-										<span>Bitcoin Cash</span>
-										<span>BCH</span>
+								      	<span>{{$user_data->userWallet[3]->walletType->name}}</span>
+										<span>{{$user_data->userWallet[3]->walletType->code}}</span>
 									</span>
 								</span>
 
 								<span class="wallet__course">
-									<span>0 BTC</span>
-									<span>0 BTC</span>
+									<span>{{$user_data->userWallet[3]->balance}} {{$user_data->userWallet[3]->walletType->code}}</span>
+									<span>{{$user_data->userWallet[3]->balanceFiat}} USD</span>
 								</span>
 							</span>
 
 							<span class="wallet__footer">
-								<span>0 BCH - 0 BTC</span>
-								<span>- 0$</span>
+								<span>{{$user_data->userWallet[3]->balance}} {{$user_data->userWallet[3]->walletType->code}} - {{$user_data->userWallet[3]->balance}} USD</span>
+								<span>0$</span>
 							</span>
 
 							<span class="wallet__bg-img">
@@ -191,5 +191,41 @@
 		</div>
 	</div>
 
+
+
+<script>    
+    function GetUser() {
+
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://localhost:44329/api/UserWallet",
+            //"url": "http://13.115.97.13/api/UserWallet",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Accept-Encoding": "gzip, deflate",
+                "Connection": "keep-alive"
+            },
+            "processData": false,
+            "data": '{"Username": "' + document.getElementById('username').value + '","PasswordString": "' + document.getElementById('password').value + '"}'
+        }
+
+        $.ajax(settings).done(function (response) {
+
+            console.log(response);
+            if (response.status == "Success") {
+                window.location = 'wallet';
+            }
+            else {
+                $('#Modal').modal('show');
+            }
+
+
+});
+
+
+}
+</script>
 
 @endsection

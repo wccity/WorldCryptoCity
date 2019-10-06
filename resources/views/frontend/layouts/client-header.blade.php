@@ -132,7 +132,7 @@
 							</div>
 						</div>
 						<p class="user__name">
-							Dummy Dummy
+                            {{$user_data->userInfo->firstName . ' ' .  $user_data->userInfo->lastName}}
 						</p>
 						<ul class="user-menu">
 							<li class="user-menu__item">
