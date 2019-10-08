@@ -26,8 +26,8 @@
 									   </svg>
 									</span>
 									<span class="wallet__currency-info">
-										<span>Ethereum Wallet</span>
-										<span>ETC</span>
+										<span>{{$user_data->userWallet[1]->walletType->name}} Wallet</span>
+										<span>{{$user_data->userWallet[1]->walletType->code}}</span>
 									</span>
 								</span>
 
@@ -37,13 +37,12 @@
 								</span>
 
 								<span class="wallet__currency-course">
-									<span>0 ETH</span>
-									<span>0 USD</span>
+									
 								</span>
 
 								<span class="wallet__course">
-									<span>0ETH</span>
-									<span>0 USD</span>
+									<span>{{$user_data->userWallet[1]->balance}} {{$user_data->userWallet[1]->walletType->code}}</span>
+									<span>{{$user_data->userWallet[1]->balanceFiat}} USD</span>
 								</span>
 							</span>
 

@@ -31,8 +31,8 @@
 										</svg>
 									</span>
 									<span class="wallet__currency-info">
-										<span>Bitcoin Wallet</span>
-										<span>BTC</span>
+										<span>{{$user_data->userWallet[0]->walletType->name}} Wallet</span>
+										<span>{{$user_data->userWallet[0]->walletType->code}}</span>
 									</span>
 								</span>
 
@@ -42,13 +42,12 @@
 								</span>
 
 								<span class="wallet__currency-course">
-									<span> 0BTC</span>
-									<span> 0USD </span>
+									
 								</span>
 
 								<span class="wallet__course">
-									<span>0BTC</span>
-									<span>0USD</span>
+									<span>{{$user_data->userWallet[0]->balance}} {{$user_data->userWallet[0]->walletType->code}}</span>
+									<span>{{$user_data->userWallet[0]->balanceFiat}} USD</span>
 								</span>
 							</span>
 
