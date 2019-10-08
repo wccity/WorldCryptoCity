@@ -53,7 +53,8 @@
 										<ul class="list">
 											<li><img class="img-responsive  circled" src="{{ asset('img/5.png') }}" width="25" height="25" alt="demo" ></li>
 											<li><img class="img-responsive  circled" src="{{ asset('img/3.png') }}" width="25" height="25" alt="demo" ></li>
-											<li><img class="img-responsive  circled" src="{{ asset('img/4.png') }}" width="25" height="25" alt="demo" ></li>
+
+											<li><img class="img-responsive  circled" src="{{ asset('img/6.png') }}" width="25" height="25" alt="demo" ></li>
 										</ul>
 									</div>
 

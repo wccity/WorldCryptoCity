@@ -6,19 +6,18 @@
 <main class="main-content">
 				<div class="wallet-inner">
 					<div class="wallet-inner__header">
-						<h2>Bitcoin wallet</h2>
+						<h2>Bitcoin Cash </h2>
 					</div>
 				</div>
 
 				<div class="wallet-inner__row">
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="wallet-inner__col">
-						<div class="wallet wallet--full-width" style="background-color: #FF0800;">
+						<div class="wallet wallet--full-width" style="background-color: #FBED28;">
 
 							<span class="wallet__header">
 								<span class="wallet__currency">
 									<span class="wallet__currency-icon">
-										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											width="42px" height="42px" viewBox="0 0 42 42" style="enable-background:new 0 0 42 42;" xml:space="preserve">
+										<img src="img/bitcoin.png" width="50px">
 											<g>
 												<path d="M20.3,21.4l-1,3.8c1.1,0.3,4.8,1.5,5.3-0.7C25.1,22.2,21.3,21.7,20.3,21.4z"/>
 												<path d="M21.5,16.1l-0.9,3.5c1,0.3,4,1.3,4.5-0.7S22.5,16.4,21.5,16.1z"/>
@@ -31,8 +30,8 @@
 										</svg>
 									</span>
 									<span class="wallet__currency-info">
-										<span>{{$user_data->userWallet[0]->walletType->name}} Wallet</span>
-										<span>{{$user_data->userWallet[0]->walletType->code}}</span>
+										<span>Bitcoin Cash Wallet</span>
+										<span>BTC</span>
 									</span>
 								</span>
 
@@ -42,12 +41,13 @@
 								</span>
 
 								<span class="wallet__currency-course">
-									
+									<span> 0BTC</span>
+									<span> 0USD </span>
 								</span>
 
 								<span class="wallet__course">
-									<span>{{$user_data->userWallet[0]->balance}} {{$user_data->userWallet[0]->walletType->code}}</span>
-									<span>{{$user_data->userWallet[0]->balanceFiat}} USD</span>
+									<span>0BTC</span>
+									<span>0USD</span>
 								</span>
 							</span>
 
@@ -58,12 +58,12 @@
 							</span>
 
 							<span class="wallet__bg-img">
-								<img src="img/wallet-bg-img-1.png" alt="">
+								<!-- <img src="img/wallet-bg-img-1.png" alt=""> -->
 							</span>
 						</div>
 
 						<div class="wallet-inner__chart">
-							<h3>Bitcoin Chart</h3>
+							<h3>Bitcoin Cash Chart</h3>
 							<div class="chart">
 								<canvas id="line-chart"></canvas>
 							</div>
@@ -76,7 +76,7 @@
 					</div>
 					<div class="wallet-inner__col">
 						<section class="transactions">
-							<h3>Bitcoin wallet transactions</h3>
+							<h3>Bitcoin Cash wallet transactions</h3>
 		
 							<div class="transactions__list">
 								<div class="transaction ">

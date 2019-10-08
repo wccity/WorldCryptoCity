@@ -6,7 +6,7 @@
 				<div class="buy">
 					<div class="buy__header">
 
-						<h2>Cash In</h2>
+						<h2>Deposite</h2>
 
 						<a href="" class="btn btn--blue">sale currency</a>
 
@@ -150,11 +150,9 @@
 									</label>
 	
 									<div class="save-payment__card-num">
-										5317... 5689
 									</div>
 	
 									<div class="save-payment__owner-name">
-										Alex Bolden
 									</div>
 
 									<div class="edit">Edit</div>
