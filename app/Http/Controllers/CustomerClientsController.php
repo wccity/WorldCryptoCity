@@ -10,7 +10,7 @@ class CustomerClientsController extends Controller
 {
     public function index_auth(Request $request)
     {
-        $url        = 'http://13.115.97.13/api/UserAuth';
+        $url        = 'http://18.216.120.230/api/UserAuth';
         $cookieFile = tempnam(null, 'session');
         $_SESSION['session_cookie'] = $cookieFile;
         $userAgent  = 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:11.0) Gecko/20100101 Firefox/11.0';
@@ -54,7 +54,7 @@ class CustomerClientsController extends Controller
 
         if (isset($_SESSION['session_cookie']))
         {
-            $url        = 'http://13.115.97.13/api/UserWallet';
+            $url        = 'http://18.216.120.230/api/UserWallet';
             //$cookieFile = tempnam(null, 'session');
             $cookieFile = $_SESSION['session_cookie'];
             $userAgent  = 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:11.0) Gecko/20100101 Firefox/11.0';
@@ -94,7 +94,7 @@ class CustomerClientsController extends Controller
 
     public function walletBitcoin()
     {
-        $url        = 'http://13.115.97.13/api/UserWallet';
+        $url        = 'http://18.216.120.230/api/UserWallet';
         //$cookieFile = tempnam(null, 'session');
         $cookieFile = $_SESSION['session_cookie'];
         $userAgent  = 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:11.0) Gecko/20100101 Firefox/11.0';
@@ -127,7 +127,7 @@ class CustomerClientsController extends Controller
 
     public function walletTether()
     {
-        $url        = 'http://13.115.97.13/api/UserWallet';
+        $url        = 'http://18.216.120.230/api/UserWallet';
         //$cookieFile = tempnam(null, 'session');
         $cookieFile = $_SESSION['session_cookie'];
         $userAgent  = 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:11.0) Gecko/20100101 Firefox/11.0';
@@ -160,7 +160,7 @@ class CustomerClientsController extends Controller
 
     public function walletEthereum()
     {
-        $url        = 'http://13.115.97.13/api/UserWallet';
+        $url        = 'http://18.216.120.230/api/UserWallet';
         //$cookieFile = tempnam(null, 'session');
         $cookieFile = $_SESSION['session_cookie'];
         $userAgent  = 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:11.0) Gecko/20100101 Firefox/11.0';
